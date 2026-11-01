@@ -107,7 +107,7 @@ fun JarvisScreen(vm: JarvisViewModel) {
                     Text("Speak", style = MaterialTheme.typography.labelMedium)
                     Switch(
                         checked = vm.speakReplies,
-                        onCheckedChange = { vm.setSpeakReplies(it) },
+                        onCheckedChange = { vm.updateSpeakReplies(it) },
                         modifier = Modifier.padding(horizontal = 8.dp),
                     )
                 },

@@ -43,7 +43,7 @@ class JarvisViewModel(app: Application) : AndroidViewModel(app) {
     /** Re-runs whatever needed a permission or a folder once the user has granted it. */
     private var retry: (() -> Unit)? = null
 
-    fun setSpeakReplies(value: Boolean) {
+    fun updateSpeakReplies(value: Boolean) {
         speakReplies = value
         container.memory.speakReplies = value
     }
